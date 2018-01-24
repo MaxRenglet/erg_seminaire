@@ -1,0 +1,162 @@
+html {
+	width: 100%;
+	color: blue;
+}
+
+body {
+	font-family: 'Roboto Mono', monospace;
+	color: blue;
+	width: 100%;
+}
+
+#content.post {
+	padding-top: 50px;
+}
+
+li.post {
+	display: block;
+	margin-top: 20px;
+}
+
+li.post button {
+		border-radius:5px;
+}
+
+
+
+#content {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+}
+
+#text_area {
+	width: 100%;
+	border: 1px solid blue;
+	padding: 5px;
+	border-radius:5px;
+	margin-bottom:10px;
+	 resize: none;
+
+}
+
+li {
+	list-style: none;
+	display: inline-block;
+}
+
+input {
+	border: 1px solid blue;
+	padding: 4px;
+	border-radius:5px;
+}
+
+#button {
+	border:1px solid blue;
+	background-color: blue;
+	color: white;
+	padding: 10px;
+	text-transform: uppercase;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 20px;
+	margin:auto;
+	text-align: center;
+	
+} 
+
+input[type="text"]
+{
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+
+@media (max-width: 820px) {
+	* {
+		box-sizing: border-box;
+	}
+	
+	/* passer body (et tous les éléments de largeur fixe) en largeur automatique */
+	#slider {
+		display: none;
+	}
+	tr {
+		padding-right: 40px;
+	}
+
+	body {
+		width: auto;
+		margin: 0;
+		padding: 10px;
+		font-size: 20px;
+	}
+
+	#button {
+		font-size: 20px;
+	}
+	
+	/* fixer une largeur maximale de 100% aux éléments potentiellement problématiques */
+
+	h1 {
+		font-size: 25px;
+	}
+	img,
+	table,
+	td,
+	blockquote,
+	code,
+	pre,
+	textarea,
+	input,
+	iframe,
+	object,
+	embed,
+	video {
+		max-width: 100%;
+	}
+	
+	/* conserver le ratio des images */
+
+	img {
+		height: auto;
+	}
+	
+	/* gestion des mots longs */
+
+	textarea,
+	table,
+	td,
+	th,
+	code,
+	pre,
+	samp {
+		-webkit-hyphens: auto; /* césure propre */
+		-moz-hyphens: auto;
+		hyphens: auto;
+		word-wrap: break-word; /* passage à la ligne forcé */
+	}
+	
+	code,
+	pre,
+	samp {
+		white-space: pre-wrap; /* passage à la ligne spécifique pour les éléments à châsse fixe */
+	}
+	
+	/* Passer à une seule colonne (à appliquer aux éléments multi-colonnes) */
+
+	.element1,
+	.element2 {
+		float: none;
+		width: auto;
+	}
+	
+	/* masquer les éléments superflus */
+
+	.hide_mobile {
+		display: none !important;
+	}
+	
+	/* Un message personnalisé */
+
+	
+}

@@ -1,0 +1,164 @@
+body {
+	font-family: 'Roboto Mono', monospace;
+	color: blue;
+	font-size: 15px;
+}
+
+.temps, .date {
+	font-weight: 300;
+
+}
+.date {
+
+}
+
+.temps {
+	padding-left:5px;
+}
+
+.user {
+	font-weight: 600;
+	padding-left:10px;
+
+}
+
+.mood {
+	font-weight: 300;
+	font-style: italic;
+	padding-left:10px;
+
+}
+
+
+.text {
+padding-left:10px;
+}
+
+table {
+}
+
+tr {
+	position: relative;
+	z-index: 1;
+}
+
+tr:last-child {
+margin-bottom: 250px;
+}
+
+table {
+
+}
+#footer {
+	position: fixed;
+	bottom: 10px;
+	text-align: right;
+	right: 10px;
+	font-size: 11px;
+}
+
+header {
+	position: fixed;
+	text-decoration: underline;
+	z-index: 1000;
+}
+
+#slider {
+	position: fixed;
+	right:30px;
+	height: 200px;
+}
+
+td {
+	display: inline;
+}
+
+@media (max-width: 820px) {
+	* {
+		box-sizing: border-box;
+	}
+	
+	/* passer body (et tous les éléments de largeur fixe) en largeur automatique */
+	#slider {
+		display: none;
+	}
+	tr {
+		padding-right: 40px;
+	}
+
+	body {
+		width: auto;
+		margin: 0;
+		padding: 10px;
+		font-size: 20px;
+	}
+
+	h1 {
+		font-size: 25px;
+	}
+	
+	/* fixer une largeur maximale de 100% aux éléments potentiellement problématiques */
+
+	td {
+		 display: inline-block;
+	}
+	img,
+	table,
+	td,
+	blockquote,
+	code,
+	pre,
+	textarea,
+	input,
+	iframe,
+	object,
+	embed,
+	video {
+		max-width: 100%;
+	}
+	
+	/* conserver le ratio des images */
+
+	img {
+		height: auto;
+	}
+	
+	/* gestion des mots longs */
+
+	textarea,
+	table,
+	td,
+	th,
+	code,
+	pre,
+	samp {
+		-webkit-hyphens: auto; /* césure propre */
+		-moz-hyphens: auto;
+		hyphens: auto;
+		word-wrap: break-word; /* passage à la ligne forcé */
+	}
+	
+	code,
+	pre,
+	samp {
+		white-space: pre-wrap; /* passage à la ligne spécifique pour les éléments à châsse fixe */
+	}
+	
+	/* Passer à une seule colonne (à appliquer aux éléments multi-colonnes) */
+
+	.element1,
+	.element2 {
+		float: none;
+		width: auto;
+	}
+	
+	/* masquer les éléments superflus */
+
+	.hide_mobile {
+		display: none !important;
+	}
+	
+	/* Un message personnalisé */
+
+	
+}
